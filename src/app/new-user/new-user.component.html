@@ -1,0 +1,22 @@
+<h2>Fill this form</h2>
+
+<label >Enter First Name:</label>
+<input type="text" name="firstName" [(ngModel)]="firstName">
+<br><br>
+
+<label >Enter Last Name:</label>
+<input type="text" name="lastName" [(ngModel)]="lastName">
+<br><br>
+
+<label >Enter Age:</label>
+<input type="text" name="personAge" [(ngModel)]="personAge">
+<br><br>
+
+<input (click)="onClick()" type="submit" value="Submit">
+<br><br>
+
+<button (click)="onRefresh()">Refresh</button>
+
+<h1 [class]="fnameClass">First Name is {{firstName}}</h1>
+<h1 [class]="lnameClass">Last name is {{lastName}}</h1>
+<h1 [class]="ageClass">Age is {{personAge}}</h1>
